@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <title>Dife calculator</title>
+</head>
+
+<body>
+   
+   <!--! Main -->
+   <main class="main">
+      <div class="container">
+
+         <div class="main__block">
+            <div class="main__content">
+               <input class="main__input" id="bin" type="text" data-type="bin">
+               <h1 class="main__title">Binary</h1>
+            </div>
+
+            <div class="main__content">
+               <input class="main__input" id="oct" type="text" data-type="oct">
+               <h1 class="main__title">Octal</h1>
+            </div>
+
+            <div class="main__content">
+               <input class="main__input" id="dec" type="number" data-type="dec">
+               <h1 class="main__title">Decimal</h1>
+            </div>
+
+            <div class="main__content">
+               <input class="main__input" id="hex" type="text" data-type="hex">
+               <h1 class="main__title">Hexadecimal</h1>
+            </div>
+         </div>
+
+         <div class="main__bottom">
+            <div class="main__variables" id="numbers-parent">
+               <div class="main__text" id="first-number">
+               </div>
+      
+               <div class="main__text" id="second-number">
+               </div>
+            </div>
+   
+            <div class="main__btns">
+               <button class="main__reset" data-btn-reset="variables">&#215; Reset variables</button>
+   
+               <button class="main__save" data-btn-save="0">Save to first variable</button>
+               <button class="main__save" data-btn-save="1">Save to second variable</button>
+   
+               <button class="main__reset" data-btn-reset="inputs">&#215; Reset</button>
+            </div>
+         </div>
+
+      </div><!-- /.container -->
+   </main><!-- /.main -->
+
+   <!--! Calc -->
+   <div class="calc">
+      <div class="container">
+         <form action="/" method="POST" id="form" class="calc__form">
+            <input class="calc__input" type="text" id="task_input" placeholder="Enter task. Example: (n1+n2)/2" autocomplete="off">
+
+            <div class="calc__btns">
+               <input class="calc__calc" type="submit" value="= Calculate">
+
+               <button class="calc__reset" data-btn-reset="task">&#215; Reset</button>
+            </div>
+
+            <input class="calc__input" type="text" disabled id="answer" placeholder="Answer">
+         </form>
+
+      </div><!-- /.container -->
+   </div><!-- /.calc -->
+
+   <!-- JS -->
+   <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
